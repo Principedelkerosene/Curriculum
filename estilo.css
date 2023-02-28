@@ -1,0 +1,103 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+  
+  .col-1, .col-2, .col-3, .col-4, .col-6, .col-8, .col-12 {
+    width: 100%;
+  }
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #444;
+  }
+  
+  header {
+    background-color: #ffd900;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  h2 {
+    margin-top: 30px;
+  }
+  h6 {
+    margin-top: 40px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  #info li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  #educacion, #experiencia, #habilidades {
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+  }
+  .navbar {
+    text-align: center;
+  }
+  #educacion li:before, #experiencia li:before, #habilidades-lista li:before {
+    content: "• ";
+    color: #00a9ff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+
+  }
+  
